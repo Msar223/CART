@@ -61,6 +61,7 @@ let decrement =(id)=>{
   
   console.log(selectedItem.id)
   update(selectedItem.id)
+  basket= basket.filter((x)=>x.item !==0)
   localStorage.setItem("data", JSON.stringify(basket));
 }
 
